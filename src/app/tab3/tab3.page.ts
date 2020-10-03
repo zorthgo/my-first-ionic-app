@@ -8,26 +8,26 @@ import { Collections } from '../collections'
 })
 export class Tab3Page {
 
-  // Contains the collection of my favorite games.
-  gamesList = Collections.gamesList;
-  // Flag that determines whether a new game is currently being added to the list.
-  isAddingNewGame = false;
-  // The new game value that should be added to the list.
-  newValue = "";
-
-  constructor() { }
-
-  // Enables the Add New Game functionality.
-  onEnableAdd() {
-    this.isAddingNewGame = true;
-  }
-
-  // Click event for the done button that adds the new value to the collection.
-  onAddNew() {
-    this.isAddingNewGame = false;
-    if (this.newValue !== null && this.newValue !== '') {
-      this.gamesList.push(this.newValue);
-    }
-    this.newValue = "";
-  }
+   // Contains the collection of my favorite games.
+   itemList = Collections.gamesList;
+   // Flag that determines whether a new game is currently being added to the list.
+   isAddingNewItem = false;
+   // The new game value that should be added to the list.
+   newValue = "";
+ 
+   constructor() { }
+ 
+   // Enables the Add New Game functionality.
+   onEnableAdd() {
+     this.isAddingNewItem = true;
+   }
+ 
+   // Click event for the done button that adds the new value to the collection.
+   onAddNew() {
+     this.isAddingNewItem = false;
+     if (this.newValue !== null && this.newValue !== '') {
+       this.itemList.push(this.newValue);
+     }
+     this.newValue = "";
+   }
 }
