@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Collections } from '../collections'
 
 @Component({
   selector: 'app-tab3',
@@ -7,8 +8,22 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
+  gamesList =  Collections.gamesList;
+  isAddingNewGame = false;
+  newValue = "";
+
   constructor() {}
 
-  gamesList: string[] = ["Assasin's Creed", "Age of Empries", "Red Dead Redumption"]
+  onEnableAdd(){
+    this.isAddingNewGame = true;
+  }
+
+  onAddNew(){
+    this.isAddingNewGame = false;
+    if(this.newValue !== null && this.newValue !== '') {
+      this.gamesList.push(this.newValue);
+    }
+    this.newValue = "";
+  }
 
 }
