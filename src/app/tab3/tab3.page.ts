@@ -9,4 +9,6 @@ export class Tab3Page {
 
   constructor() {}
 
+  gamesList: string[] = ["Assasin's Creed", "Age of Empries", "Red Dead Redumption"]
+
 }

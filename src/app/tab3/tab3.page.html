@@ -15,25 +15,9 @@
 
   <!-- List my favorite games -->
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor="let game of gamesList;">
       <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">Pokémon Yellow</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">Mega Man X</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">The Legend of Zelda</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">Pac-Man</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">Super Mario World</ion-label>
+      <ion-label class="list-label">{{game}}</ion-label>
     </ion-item>
   </ion-list>
 
