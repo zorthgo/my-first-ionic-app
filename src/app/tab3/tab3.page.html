@@ -17,16 +17,28 @@
 
   <!-- List my favorite games -->
   <ion-list>
-    <ion-item *ngFor="let item of itemList;">
-      <ion-icon name="caret-forward-circle-outline"></ion-icon>
-      <ion-label class="list-label">{{item}}</ion-label>
+    <ion-item *ngFor="let item of itemList;" class="list-item">
+      <!-- <ion-icon name="caret-forward-circle-outline"></ion-icon> -->
+      <ion-thumbnail slot="start">
+        <ion-img size="small" [src]="item.Url" class="game-img"></ion-img>
+      </ion-thumbnail>
+      <ion-label class="list-label">{{item.GameTitle}}</ion-label>
     </ion-item>
 
     <!-- Add new game button -->
     <ion-item>
       <ion-button *ngIf="!isAddingNewItem" color="primary" (click)="onEnableAdd()">Add New Game</ion-button>
-      <input *ngIf="isAddingNewItem" type="text" [(ngModel)]="newValue" />
-      <ion-button *ngIf="isAddingNewItem" color="primary" (click)="onAddNew()">Done</ion-button>
+      <ion-list *ngIf="isAddingNewItem">
+        <ion-item>
+          <input type="text" [(ngModel)]="newName" placeholder="Name of game" />
+        </ion-item>
+        <ion-item>
+          <input type="text" [(ngModel)]="newUrl" placeholder="URL to cover image" />
+        </ion-item>
+        <ion-item>
+          <ion-button color="primary" (click)="onAddNew()">Insert New Game</ion-button>
+        </ion-item>
+      </ion-list>
     </ion-item>
   </ion-list>
 
