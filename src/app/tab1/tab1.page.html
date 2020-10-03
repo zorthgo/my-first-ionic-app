@@ -24,7 +24,7 @@
 
     <!-- Add new Family Member button -->
     <ion-item>
-      <ion-button *ngIf="!isAddingNewItem" color="primary" (click)="onEnableAdd()">Add New Game</ion-button>
+      <ion-button *ngIf="!isAddingNewItem" color="primary" (click)="onEnableAdd()">Add New Family</ion-button>
       <input *ngIf="isAddingNewItem" type="text" [(ngModel)]="newValue" />
       <ion-button *ngIf="isAddingNewItem" color="primary" (click)="onAddNew()">Done</ion-button>
     </ion-item>
