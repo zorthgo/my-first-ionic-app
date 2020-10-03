@@ -5,6 +5,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -13,14 +14,14 @@
     </ion-toolbar>
   </ion-header>
 
-  <!-- List my favorite games -->
+  <!-- List my favorite Family Members -->
   <ion-list>
     <ion-item *ngFor="let item of itemList;">
       <ion-icon name="caret-forward-circle-outline"></ion-icon>
       <ion-label class="list-label">{{item}}</ion-label>
     </ion-item>
 
-    <!-- Add new game button -->
+    <!-- Add new Family Member button -->
     <ion-item>
       <ion-button *ngIf="!isAddingNewItem" color="primary" (click)="onEnableAdd()">Add New Game</ion-button>
       <input *ngIf="isAddingNewItem" type="text" [(ngModel)]="newValue" />

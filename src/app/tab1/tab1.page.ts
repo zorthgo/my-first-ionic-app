@@ -8,16 +8,16 @@ import { Collections } from '../collections'
 })
 export class Tab1Page {
 
- // Contains the collection of my favorite games.
+ // Contains the collection of my favorite family members.
  itemList = Collections.familyList;
- // Flag that determines whether a new game is currently being added to the list.
+ // Flag that determines whether a new item is currently being added to the list.
  isAddingNewItem = false;
- // The new game value that should be added to the list.
+ // The new item value that should be added to the list.
  newValue = "";
 
  constructor() { }
 
- // Enables the Add New Game functionality.
+ // Enables the Add New item functionality.
  onEnableAdd() {
    this.isAddingNewItem = true;
  }
