@@ -2,9 +2,9 @@
     {
         "Id": 1,
         "Title": "Bicept Curl",
-        "BodyPartImagePath": "/app-images/bicept-curl-body-part.png",
+        "BodyPartImagePath": "assets/app-images/FF.png",
         "Description": "The bicepts curls will make your arms look like something chicks wnat to sink their teath into. Altough painful, you'll probably like it.",
-        "YouTubeVideoUrl": "https://youtube.com/embed/xyouasdf",
+        "YouTubeVideoUrl": "https://youtube.com/embed/2tBnBAkHv9M",
         "WorkoutSetps": [
             "Hold the dumb bells",
             "Bring the up to your ears",
@@ -15,9 +15,9 @@
     {
         "Id": 2,
         "Title": "Double Bicept Curl",
-        "BodyPartImagePath": "/app-images/double-bicept-curl-body-part.png",
+        "BodyPartImagePath": "assets/app-images/FF.png",
         "Description": "The double bicepts clurls go one step further than the simple bicept curl, and besides making your bicept bigger, it also makes your dick bigger, and thus attracts women",
-        "YouTubeVideoUrl": "https://youtube.com/embed/xyouasdf",
+        "YouTubeVideoUrl": "https://youtube.com/embed/2tBnBAkHv9M",
         "WorkoutSetps": [
             "Hold the dumb bells",
             "Bring the up to your ears",

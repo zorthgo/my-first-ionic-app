@@ -11,23 +11,16 @@
     <ion-toolbar>
       <!-- Title-->
       <ion-icon size="large" name="list-circle-outline"></ion-icon>
-      <ion-title size="large" class="title">Exercises Details</ion-title>
+      <ion-title size="large" class="title">{{workoutData.Title}}</ion-title>
     </ion-toolbar>
   </ion-header>
-  {{id}}
+  <img [src]="workoutData.BodyPartImagePath"/>
   <br/>
   <br/>
-  Title: {{workoutData.Title}}
-  <br/>
-  <br/>
-  Body Part Image Path: {{workoutData.BodyPartImagePath}}
-  <br/>
-  <br/>
-  Description: {{workoutData.Description}}
+  {{workoutData.Description}}
   <br/>
   <br/>
   <iframe width="100%" height="315" [src]="sanatizeUrl(workoutData.YouTubeVideoUrl)" frameborder="0" allowfullscreen></iframe>
-  Youtube URL: {{sanatizeUrl(workoutData.YouTubeVideoUrl)}}
   <br/>
   <br/>
   <ion-list>

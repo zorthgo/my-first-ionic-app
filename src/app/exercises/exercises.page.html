@@ -18,8 +18,10 @@
     <!-- List my favorite Family Members -->
     <ion-list>
       <ion-item *ngFor="let item of workoutData;" (click)="onOpenItem(item.Id)">
-        <ion-icon name="heart-outline" ></ion-icon>
-        <ion-label class="list-label">{{item.Title}}, {{item.Id}}</ion-label>
+        <ion-thumbnail slot="start">
+          <ion-img size="small" [src]="item.BodyPartImagePath" class="game-img"></ion-img>
+        </ion-thumbnail>
+        <ion-label class="list-label">{{item.Title}}</ion-label>
       </ion-item>
     </ion-list>
 </ion-content>
