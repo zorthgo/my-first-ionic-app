@@ -45,7 +45,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/family-members-tab',
+    redirectTo: '/tabs/exercises',
     pathMatch: 'full'
   }
 ];

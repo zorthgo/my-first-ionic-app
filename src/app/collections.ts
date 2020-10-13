@@ -21,3 +21,9 @@ export class WorkoutData {
     YouTubeVideoUrl : string;
     WorkoutSetps : string[];
 }
+
+export class LoggedWorkout {
+    ExerciseId : number;
+    Title : string;
+    WorkoutDate : Date;
+}

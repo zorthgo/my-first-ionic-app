@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Collections, WorkoutData } from '../collections';
 import { DomSanitizer } from '@angular/platform-browser';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 @Component({
   selector: 'app-exercise-details',
