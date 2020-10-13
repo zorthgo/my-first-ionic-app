@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Exercises
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <!-- Title-->
+      <ion-icon size="large" name="barbell-outline"></ion-icon>
+      <ion-title size="large" class="title">Exercises</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <!-- List my favorite Family Members -->
+    <ion-list>
+      <ion-item *ngFor="let item of workoutData;" (click)="onOpenItem(item.Id)">
+        <ion-icon name="heart-outline" ></ion-icon>
+        <ion-label class="list-label">{{item.Title}}, {{item.Id}}</ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>

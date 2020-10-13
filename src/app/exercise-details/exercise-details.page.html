@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Exercises Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <!-- Title-->
+      <ion-icon size="large" name="list-circle-outline"></ion-icon>
+      <ion-title size="large" class="title">Exercises Details</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  {{id}}
+
+  Title: {{workoutData.Title}}
+
+  <ion-button (click)="onBackClick(2)"></ion-button>
+</ion-content>

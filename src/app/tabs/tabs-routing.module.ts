@@ -25,6 +25,18 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'exercises',
+        loadChildren: () => import('../exercises/exercises.module').then( m => m.ExercisesPageModule)
+      },   
+      {
+        path: 'exercises/:id',
+        loadChildren: () => import('../exercises/exercises.module').then( m => m.ExercisesPageModule)
+      },   
+      {
+        path: 'exercise-details/:id',
+        loadChildren: () => import('../exercise-details/exercise-details.module').then( m => m.ExerciseDetailsPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
