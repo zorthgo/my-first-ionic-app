@@ -1,28 +1,123 @@
 [
     {
         "Id": 1,
-        "Title": "Bicept Curl",
-        "BodyPartImagePath": "assets/app-images/biceps_curl.png",
-        "Description": "The bicepts curls will make your arms look like something chicks wnat to sink their teath into. Altough painful, you'll probably like it.",
-        "YouTubeVideoUrl": "https://youtube.com/embed/in7PaeYlhrM",
+        "Title": "Push-ups",
+        "BodyPartImagePath": "assets/app-images/chest-lg.png",
+        "Description": "Since the advent of time humans have been pushing themselves away from the ground in an attempt to become stronger than the earth they push away from, an undeniable good first step in a home workout.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/KEFQyLkDYtI",
         "WorkoutSetps": [
-            "Hold the dumb bells",
-            "Bring the up to your ears",
-            "Bring them down to the starting position",
-            "repeat as necessary"
+            "Place both hands shoulder width apart",
+            "Line your legs up just short of shoulder width",
+            "Slowly lower body to ground keeping elbows tucked, not allowing them to flare",
+            "Hold for five seconds",
+            "Slowly raise body from ground",
+            "Repeat until failure"
+
         ]
     },
     {
         "Id": 2,
-        "Title": "Double Bicept Curl",
-        "BodyPartImagePath": "assets/app-images/double_biceps_curl.png",
-        "Description": "The double bicepts clurls go one step further than the simple bicept curl, and besides making your bicept bigger, it also makes your dick bigger, and thus attracts women",
-        "YouTubeVideoUrl": "https://youtube.com/embed/i1YgFZB6alI",
+        "Title": "Pull-up",
+        "BodyPartImagePath": "assets/app-images/upperback-lg.png",
+        "Description": "Classified as the king of body weight excercises, while we try to keep you away from needing equipment, this excercise is too crucial to skip.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/5oxviYmdHCY",
         "WorkoutSetps": [
-            "Hold the dumb bells",
-            "Bring the up to your ears",
-            "Bring them down to the starting position",
-            "repeat as necessary"
+            "Line yourself under your bar",
+            "Place hands at shoulder with and grip the bar tightly",
+            "Raise your body using your traps",
+            "Bring chin above bar",
+            "Lower yourself slowly to the ground maintaining control",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 3,
+        "Title": "Chest Dips",
+        "BodyPartImagePath": "assets/app-images/chest-lg.png",
+        "Description": "Finishing the upper body portion of this workout, we will now perform the dip. While primarily a chest excercise this also will give you boulders for shoulders. You can do this excercise between two sturdy chairs.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/FG1ENBFsdHU",
+        "WorkoutSetps": [
+            "Approach the center of your bar set-up",
+            "Place your hands at equal positions on the bar",
+            "Lower yourself until your elbows reach 90 degrees",
+            "Hold for three seconds",
+            "Raise your body back up using your chest",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 4,
+        "Title": "Step-ups",
+        "BodyPartImagePath": "assets/app-images/quads-lg.png",
+        "Description": "While deceptivley easy, the step-up is a demon of an excercise that you can either choose to use with dumbbells or your own bodyweight.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/90-X4kqhY3E",
+        "WorkoutSetps": [
+            "Approach your bench/chair",
+            "Step your right foot onto the surface and raise yourself using your quads",
+            "Hold the position at the top for just a moment",
+            "Carefully lower yourself down (watch your knees!) and then do the same for the other leg",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 5,
+        "Title": "Bulgarian Split Squat",
+        "BodyPartImagePath": "assets/app-images/quads-lg.png",
+        "Description": "While the name is a mouthful, the excercise is not. Heavily focusing on making sure you burn enough calories to enjoy some Baklava~",
+        "YouTubeVideoUrl": "https://youtube.com/embed/uqI3GVwfToU",
+        "WorkoutSetps": [
+            "Stand infront of your bench, facing away from it",
+            "Place one of your legs on the bench",
+            "Slowly lower your leg, careful not to let your knee go past your toes",
+            "Raise yourself back up in a controlled motion",
+            "Repeat until failure",
+            "Repeat for other leg"
+        ]
+    },
+    {
+        "Id": 6,
+        "Title": "Leg-Raise",
+        "BodyPartImagePath": "assets/app-images/abs-lg.png",
+        "Description": "Beginning the final stretch of this workout we begin with a classic leg raise designed to make both your abs and lower back DY-NO-MITE!",
+        "YouTubeVideoUrl": "https://youtube.com/embed/r24ntO4IvKc",
+        "WorkoutSetps": [
+            "Lay flat on your back",
+            "Place both legs by eachother, like you're a stiff in a mourge",
+            "Tighten your abdominal muscles and lower back",
+            "Raise your legs to the sky and form a 90 degree angle with your body",
+            "Slowly lower your legs back to the earth",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 7,
+        "Title": "Floor-Crunch",
+        "BodyPartImagePath": "assets/app-images/abs-lg.png",
+        "Description": "Old as time itself, the floor crunch is as simple as it sounds. GET TO IT!",
+        "YouTubeVideoUrl": "https://youtube.com/embed/NGRKFMKhF8s",
+        "WorkoutSetps": [
+            "Lay flat on your back",
+            "Place your legs either at a 90 degree angle in the air or planted flat",
+            "Cross your arms across your chest and keep them there",
+            "Raise your body up touching your shoulders to your knees",
+            "Slowly lower your body down",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 8,
+        "Title": "Plank",
+        "BodyPartImagePath": "assets/app-images/abs-lg.png",
+        "Description": "Wrapping up this workout with the excercise that makes time stop.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/TvxNkmjdhMM",
+        "WorkoutSetps": [
+            "Place your elbows on the floor at shoulder width",
+            "Bring your legs and the rest of your body into a push-up position",
+            "Hold",
+            "Hold..",
+            "HOLD...!",
+            "NOW!",
+            "Release the plank after you can no longer hold"
         ]
     }
 ]
