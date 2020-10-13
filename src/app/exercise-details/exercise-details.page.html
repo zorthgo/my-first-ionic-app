@@ -15,8 +15,27 @@
     </ion-toolbar>
   </ion-header>
   {{id}}
-
+  <br/>
+  <br/>
   Title: {{workoutData.Title}}
+  <br/>
+  <br/>
+  Body Part Image Path: {{workoutData.BodyPartImagePath}}
+  <br/>
+  <br/>
+  Description: {{workoutData.Description}}
+  <br/>
+  <br/>
+  <iframe width="100%" height="315" [src]="sanatizeUrl(workoutData.YouTubeVideoUrl)" frameborder="0" allowfullscreen></iframe>
+  Youtube URL: {{sanatizeUrl(workoutData.YouTubeVideoUrl)}}
+  <br/>
+  <br/>
+  <ion-list>
+    <ion-item *ngFor="let item of workoutData.WorkoutSetps;">
+      <ion-icon name="heart-outline" ></ion-icon>
+      <ion-label class="list-label">{{item}}</ion-label>
+    </ion-item>
+  </ion-list>
 
   <ion-button (click)="onBackClick(2)"></ion-button>
 </ion-content>
