@@ -15,24 +15,27 @@
     </ion-toolbar>
   </ion-header>
 
-<ion-content>
+  <ion-content>
 
-  <ion-card *ngFor="let item of sortedWorkouLogs;">
+    <ion-card *ngFor="let item of sortedWorkouLogs;">
       <ion-card-header>
         <ion-title>{{item.WorkoutDate}}</ion-title>
       </ion-card-header>
       <ion-card-content>
         <ion-list>
-        <ion-item *ngFor="let innerItem of item.WorkoutLogged;">
-          <ion-thumbnail slot="start">
-            <ion-img size="small" [src]="innerItem.BodyPartImagePath" class="game-img"></ion-img>
-          </ion-thumbnail>
-          <ion-label class="list-label">{{innerItem.Title}}</ion-label>
-        </ion-item>
-      </ion-list>
+          <ion-item *ngIf="item.WorkoutLogged.length == 0">
+            - No exercise logged - 
+          </ion-item>
+
+          <ion-item *ngFor="let innerItem of item.WorkoutLogged;">
+            <ion-thumbnail slot="start">
+              <ion-img size="small" [src]="innerItem.BodyPartImagePath" class="game-img"></ion-img>
+            </ion-thumbnail>
+            <ion-label class="list-label">{{innerItem.Title}}</ion-label>
+          </ion-item>
+        </ion-list>
       </ion-card-content>
-      
-  </ion-card>
 
-</ion-content>
+    </ion-card>
 
+  </ion-content>

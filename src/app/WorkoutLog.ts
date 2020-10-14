@@ -26,9 +26,10 @@ export class WorkoutLog {
 
     private GetCurrentDateString() : string {
         let currentDate = new Date();
-        let currentDateString = `${currentDate.getFullYear()}-${currentDate.getMonth()}-${currentDate.getDay()}`;
+        let currentDateString = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
         
         console.log(currentDateString);
+
         return currentDateString;
     }
 

@@ -20,19 +20,20 @@ export class ExcerciseLogPage implements OnInit {
     this.sortedWorkouLogs = this.GetSortedList();
   }
 
+  // Returns the list of workout in descending order.
   public GetSortedList(): DailyWorkout[] {
 
     // Create a sort function.
     let comparisonFunc = function compare(a: DailyWorkout, b: DailyWorkout) {
 
-      const bandA = a.WorkoutDate.toUpperCase();
-      const bandB = b.WorkoutDate.toUpperCase();
+      const bandA = parseInt(a.WorkoutDate.split('-').join(''));
+      const bandB = parseInt(b.WorkoutDate.split('-').join(''));
 
       let comparison = 0;
       if (bandA > bandB) {
-        comparison = 1;
-      } else if (bandA < bandB) {
         comparison = -1;
+      } else if (bandA < bandB) {
+        comparison = 1;
       }
       return comparison;
     }
