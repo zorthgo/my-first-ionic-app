@@ -15,7 +15,7 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-content>
+  <ion-content *ngIf="workoutLog.IsInitialized">
 
     <ion-card *ngFor="let item of sortedWorkouLogs;">
       <ion-card-header>

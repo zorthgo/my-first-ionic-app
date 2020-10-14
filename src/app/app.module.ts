@@ -10,12 +10,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SafePipe } from './SafePipe';
 import { WorkoutLog } from './WorkoutLog';
+import { IonicStorageModule, Storage } from '@ionic/storage';
 
 
 @NgModule({
   declarations: [AppComponent, SafePipe ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule, 
+    IonicStorageModule.forRoot()
+  ],
   providers: [
     StatusBar,
     SafePipe,

@@ -1,19 +1,40 @@
+import { Storage } from '@ionic/storage';
 import * as sampleLogs from './WorkoutLogHydration.json';
+import { Injectable } from '@angular/core';
 
-
+@Injectable()
 export class WorkoutLog {
+    public IsInitialized: boolean = false;
     public workoutData: DailyWorkout[] = new Array();
+    private workoutStorageKey = "WorkoutLogs";
 
-    constructor() {
-        let currentWorkoutLog = this.GetCurrentWorkoutLog();
+    constructor(private storage: Storage) {
 
-        this.workoutData = (sampleLogs as any).default;
+        storage.get(this.workoutStorageKey).then(storedLogs => {
 
-        if (currentWorkoutLog == null) {
-            let newWorkout = new DailyWorkout();
-            newWorkout.WorkoutDate = this.GetCurrentDateString();
-            this.workoutData.push(newWorkout);
-        }
+            console.log(`LOGS: ${storedLogs}`);
+
+            if (storedLogs == null)
+            {
+                this.workoutData = (sampleLogs as any).default;
+                console.log("Logged from the json file.")
+            }
+            else
+            {
+                this.workoutData = JSON.parse(storedLogs);
+                console.log("Logged from the local storage.")
+            }
+            
+
+            if (this.GetCurrentWorkoutLog() == null) {
+                let newWorkout = new DailyWorkout();
+                newWorkout.WorkoutDate = this.GetCurrentDateString();
+                this.workoutData.push(newWorkout);
+                console.log("Create a new today log.")
+            }
+
+            this.IsInitialized = true;
+        });
     }
 
     public LogTodayWorkout(newWorkoutLog: Workout) {
@@ -24,10 +45,13 @@ export class WorkoutLog {
         // Ensures that we don't add multiple instance of the same exercise for the same day.
         if (currentWorkout.WorkoutLogged.filter(x => x.ExerciseId == newWorkoutLog.ExerciseId)[0] != null)
             return;
-        
-            // Adds the new workout to the list.
+
+        // Adds the new workout to the list.
         currentWorkout.WorkoutLogged.push(newWorkoutLog);
-        
+
+        // Saves the new workout logs to the local storage.
+        this.storage.set(this.workoutStorageKey, JSON.stringify(this.workoutData));
+
         return
     }
 

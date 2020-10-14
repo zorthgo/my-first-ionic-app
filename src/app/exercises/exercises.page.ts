@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
 import { Collections } from '../collections'
+import { WorkoutLog, DailyWorkout } from '../WorkoutLog';
 
 @Component({
   selector: 'app-exercises',
@@ -10,7 +11,7 @@ import { Collections } from '../collections'
 export class ExercisesPage implements OnInit {
 
   public workoutData = Collections.workoutData;
-  
+
   public id: number = 1;
 
   public list: List[] = [
@@ -32,7 +33,7 @@ export class ExercisesPage implements OnInit {
     },
   ]
 
-  constructor(public route: ActivatedRoute, private router: Router) {
+  constructor(public route: ActivatedRoute, private router: Router, private workougLogs: WorkoutLog) {
     this.id = this.route.snapshot.params.id;
   }
 
