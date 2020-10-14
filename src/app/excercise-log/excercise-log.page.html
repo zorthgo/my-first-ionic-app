@@ -23,8 +23,10 @@
       </ion-card-header>
       <ion-card-content>
         <ion-list>
-          <ion-item *ngIf="item.WorkoutLogged.length == 0">
-            - No exercise logged - 
+          <ion-item class="ion-text-center" *ngIf="item.WorkoutLogged.length == 0">
+            <ion-icon name="heart-dislike-outline"></ion-icon>
+            <ion-label>No exercise logged</ion-label> 
+            <ion-icon name="heart-dislike-outline"></ion-icon>
           </ion-item>
 
           <ion-item *ngFor="let innerItem of item.WorkoutLogged;">

@@ -9,8 +9,7 @@ export class WorkoutLog {
 
         this.workoutData = (sampleLogs as any).default;
 
-        if(currentWorkoutLog == null)
-        {
+        if (currentWorkoutLog == null) {
             let newWorkout = new DailyWorkout();
             newWorkout.WorkoutDate = this.GetCurrentDateString();
             this.workoutData.push(newWorkout);
@@ -18,22 +17,31 @@ export class WorkoutLog {
     }
 
     public LogTodayWorkout(newWorkoutLog: Workout) {
+
+        // Gets the workout log for today.
         let currentWorkout = this.GetCurrentWorkoutLog();
+
+        // Ensures that we don't add multiple instance of the same exercise for the same day.
+        if (currentWorkout.WorkoutLogged.filter(x => x.ExerciseId == newWorkoutLog.ExerciseId)[0] != null)
+            return;
+        
+            // Adds the new workout to the list.
         currentWorkout.WorkoutLogged.push(newWorkoutLog);
-        console.log(JSON.stringify(this.workoutData));
+        
         return
     }
 
-    private GetCurrentDateString() : string {
-        let currentDate = new Date();
-        let currentDateString = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
-        
-        console.log(currentDateString);
+    private GetCurrentDateString(): string {
 
-        return currentDateString;
+        // Gets the current date.
+        let currentDate = new Date();
+
+        // returns the date as a string in the [year-month-day] format.
+        return `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}-${currentDate.getDate()}`;
     }
 
-    private GetCurrentWorkoutLog() : DailyWorkout {
+    // Retrieves the current workout from the array.
+    private GetCurrentWorkoutLog(): DailyWorkout {
         return this.workoutData.filter(x => x.WorkoutDate == this.GetCurrentDateString())[0]
     }
 }
@@ -47,5 +55,5 @@ export class DailyWorkout {
 export class Workout {
     ExerciseId: number;
     Title: string;
-    BodyPartImagePath : string;
+    BodyPartImagePath: string;
 } 
