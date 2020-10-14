@@ -2,6 +2,10 @@ import { Storage } from '@ionic/storage';
 import * as sampleLogs from './WorkoutLogHydration.json';
 import { Injectable } from '@angular/core';
 
+/*---------------------------------
+ * This class keeps a list of daily
+ * workout routinesF.
+ *--------------------------------*/
 @Injectable()
 export class WorkoutLog {
 
@@ -60,12 +64,19 @@ export class WorkoutLog {
     }
 }
 
-
+/*---------------------------------
+ * Daily Workout POCO. It stores
+ * daily workout routines. 
+ *--------------------------------*/
 export class DailyWorkout {
     WorkoutDate: string;
     WorkoutLogged: Workout[] = new Array();
 }
 
+/*---------------------------------
+ * Holds information of each workout
+ * routine that was performed.  
+ *--------------------------------*/
 export class Workout {
     ExerciseId: number;
     Title: string;
