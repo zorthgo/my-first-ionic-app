@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class WorkoutLog {
-    public IsInitialized: boolean = false;
+
     public workoutData: DailyWorkout[] = new Array();
     private workoutStorageKey = "WorkoutLogs";
 
@@ -12,28 +12,18 @@ export class WorkoutLog {
 
         storage.get(this.workoutStorageKey).then(storedLogs => {
 
-            console.log(`LOGS: ${storedLogs}`);
-
+            // Lodas the log data from the local storage, or the json file containing the sample hydration file.
             if (storedLogs == null)
-            {
                 this.workoutData = (sampleLogs as any).default;
-                console.log("Logged from the json file.")
-            }
             else
-            {
                 this.workoutData = JSON.parse(storedLogs);
-                console.log("Logged from the local storage.")
-            }
             
-
+            // Creates a new Daily Workout Log for today if one does not already exist.
             if (this.GetCurrentWorkoutLog() == null) {
                 let newWorkout = new DailyWorkout();
                 newWorkout.WorkoutDate = this.GetCurrentDateString();
                 this.workoutData.push(newWorkout);
-                console.log("Create a new today log.")
             }
-
-            this.IsInitialized = true;
         });
     }
 
