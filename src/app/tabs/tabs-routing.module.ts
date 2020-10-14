@@ -26,15 +26,19 @@ const routes: Routes = [
       },
       {
         path: 'exercises',
-        loadChildren: () => import('../exercises/exercises.module').then( m => m.ExercisesPageModule)
-      },   
+        loadChildren: () => import('../exercises/exercises.module').then(m => m.ExercisesPageModule)
+      },
       {
         path: 'exercises/:id',
-        loadChildren: () => import('../exercises/exercises.module').then( m => m.ExercisesPageModule)
-      },   
+        loadChildren: () => import('../exercises/exercises.module').then(m => m.ExercisesPageModule)
+      },
       {
         path: 'exercise-details/:id',
-        loadChildren: () => import('../exercise-details/exercise-details.module').then( m => m.ExerciseDetailsPageModule)
+        loadChildren: () => import('../exercise-details/exercise-details.module').then(m => m.ExerciseDetailsPageModule)
+      },
+      {
+        path: 'excercise-log',
+        loadChildren: () => import('../excercise-log/excercise-log.module').then(m => m.ExcerciseLogPageModule)
       },
       {
         path: '',
@@ -54,4 +58,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

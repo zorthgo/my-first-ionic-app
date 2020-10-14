@@ -9,6 +9,8 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SafePipe } from './SafePipe';
+import { WorkoutLog } from './WorkoutLog';
+
 
 @NgModule({
   declarations: [AppComponent, SafePipe ],
@@ -17,6 +19,7 @@ import { SafePipe } from './SafePipe';
   providers: [
     StatusBar,
     SafePipe,
+    WorkoutLog,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],

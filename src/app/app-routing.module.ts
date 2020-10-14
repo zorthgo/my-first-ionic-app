@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'exercise-details',
     loadChildren: () => import('./exercise-details/exercise-details.module').then( m => m.ExerciseDetailsPageModule)
+  },
+  {
+    path: 'excercise-log',
+    loadChildren: () => import('./excercise-log/excercise-log.module').then( m => m.ExcerciseLogPageModule)
   }
 ];
 @NgModule({

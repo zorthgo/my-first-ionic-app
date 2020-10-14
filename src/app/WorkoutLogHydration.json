@@ -1,0 +1,87 @@
+[
+    {
+        "WorkoutDate": "2020-10-1",
+        "WorkoutLogged": [
+            {
+                "ExerciseId": 1,
+                "Title": "Push-ups",
+                "BodyPartImagePath": "assets/app-images/chest-lg.png"
+            },
+            {
+                "ExerciseId": 3,
+                "Title": "Chest Dips",
+                "BodyPartImagePath": "assets/app-images/chest-lg.png"
+            },
+            {
+                "ExerciseId": 8,
+                "Title": "Plank",
+                "BodyPartImagePath": "assets/app-images/abs-lg.png"
+            }
+        ]
+    },
+    {
+        "WorkoutDate": "2020-10-2",
+        "WorkoutLogged": [
+            {
+                "ExerciseId": 4,
+                "Title": "Step-ups",
+                "BodyPartImagePath": "assets/app-images/quads-lg.png"
+            },
+            {
+                "ExerciseId": 5,
+                "Title": "Bulgarian Split Squat",
+                "BodyPartImagePath": "assets/app-images/quads-lg.png"
+            },
+            {
+                "ExerciseId": 6,
+                "Title": "Leg-Raise",
+                "BodyPartImagePath": "assets/app-images/abs-lg.png"
+            },
+            {
+                "ExerciseId": 7,
+                "Title": "Floor-Crunch",
+                "BodyPartImagePath": "assets/app-images/abs-lg.png"
+            }
+        ]
+    },
+    {
+        "WorkoutDate": "2020-10-3",
+        "WorkoutLogged": [
+            {
+                "ExerciseId": 1,
+                "Title": "Push-ups",
+                "BodyPartImagePath": "assets/app-images/chest-lg.png"
+            },
+            {
+                "ExerciseId": 2,
+                "Title": "Pull-up",
+                "BodyPartImagePath": "assets/app-images/upperback-lg.png"
+            },
+            {
+                "ExerciseId": 8,
+                "Title": "Plank",
+                "BodyPartImagePath": "assets/app-images/abs-lg.png"
+            }
+        ]
+    },
+    {
+        "WorkoutDate": "2020-10-4",
+        "WorkoutLogged": [
+            {
+                "ExerciseId": 1,
+                "Title": "Push-ups",
+                "BodyPartImagePath": "assets/app-images/chest-lg.png"
+            },
+            {
+                "ExerciseId": 2,
+                "Title": "Pull-up",
+                "BodyPartImagePath": "assets/app-images/upperback-lg.png"
+            },
+            {
+                "ExerciseId": 3,
+                "Title": "Chest Dips",
+                "BodyPartImagePath": "assets/app-images/chest-lg.png"
+            }
+        ]
+    }
+]

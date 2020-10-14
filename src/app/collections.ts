@@ -1,5 +1,6 @@
 import * as data from './rankedGameCollection.json';
 import * as workoutData from './workoutData.json';
+import { NativeStorage } from '@ionic-native/native-storage';
 
 export class Collections {
     public static foodList: string[] = ["Sushi", "Feijoada", "Chicken Soup", "Chicken & Okra"]
@@ -20,10 +21,4 @@ export class WorkoutData {
     Description : string;
     YouTubeVideoUrl : string;
     WorkoutSetps : string[];
-}
-
-export class LoggedWorkout {
-    ExerciseId : number;
-    Title : string;
-    WorkoutDate : Date;
 }
