@@ -17,6 +17,38 @@
     },
     {
         "Id": 2,
+        "Title": "Diamond Push-ups",
+        "BodyPartImagePath": "assets/app-images/chest-lg.png",
+        "Description": "Meet the pushups angry little brother. The diamond pushup not only focuses your chest but your triceps as well.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/pD3mD6WgykM",
+        "WorkoutSetps": [
+            "Place your hands into a dimon shape, thumbs and index fingers touching",
+            "Line your legs up just short of shoulder width",
+            "Slowly lower body to ground keeping elbows tucked, not allowing them to flare",
+            "Hold for five seconds",
+            "Slowly raise body from ground",
+            "Repeat until failure"
+
+        ]
+    },
+    {
+        "Id": 3,
+        "Title": "Wide-grip Push-ups",
+        "BodyPartImagePath": "assets/app-images/chest-lg.png",
+        "Description": "When working your chest without weights, you must hit every part of the pectoral muscle, this excercise helps facilitate that.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/rr6eFNNDQdU",
+        "WorkoutSetps": [
+            "Place your hands wider than your shoulders",
+            "Line your legs up just short of shoulder width",
+            "Slowly lower body to ground keeping elbows tucked, not allowing them to flare",
+            "Hold for five seconds",
+            "Slowly raise body from ground",
+            "Repeat until failure"
+
+        ]
+    },
+    {
+        "Id": 4,
         "Title": "Pull-up",
         "BodyPartImagePath": "assets/app-images/upperback-lg.png",
         "Description": "Classified as the king of body weight excercises, while we try to keep you away from needing equipment, this excercise is too crucial to skip.",
@@ -31,7 +63,22 @@
         ]
     },
     {
-        "Id": 3,
+        "Id": 5,
+        "Title": "Chin-up",
+        "BodyPartImagePath": "assets/app-images/upperback-lg.png",
+        "Description": "A little bit less stressful version of the pull-up, this is an alternate way to build your upper back and lats",
+        "YouTubeVideoUrl": "https://youtube.com/embed/brhRXlOhsAM",
+        "WorkoutSetps": [
+            "Line yourself under your bar",
+            "Place your hands reversed on the bar, palms facing you with a tight grip",
+            "Raise your body using your traps",
+            "Bring chin above bar",
+            "Lower yourself slowly to the ground maintaining control",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 6,
         "Title": "Chest Dips",
         "BodyPartImagePath": "assets/app-images/chest-lg.png",
         "Description": "Finishing the upper body portion of this workout, we will now perform the dip. While primarily a chest excercise this also will give you boulders for shoulders. You can do this excercise between two sturdy chairs.",
@@ -46,7 +93,7 @@
         ]
     },
     {
-        "Id": 4,
+        "Id": 7,
         "Title": "Step-ups",
         "BodyPartImagePath": "assets/app-images/quads-lg.png",
         "Description": "While deceptivley easy, the step-up is a demon of an excercise that you can either choose to use with dumbbells or your own bodyweight.",
@@ -60,7 +107,7 @@
         ]
     },
     {
-        "Id": 5,
+        "Id": 8,
         "Title": "Bulgarian Split Squat",
         "BodyPartImagePath": "assets/app-images/quads-lg.png",
         "Description": "While the name is a mouthful, the excercise is not. Heavily focusing on making sure you burn enough calories to enjoy some Baklava~",
@@ -75,7 +122,64 @@
         ]
     },
     {
-        "Id": 6,
+        "Id": 9,
+        "Title": "Jump Squat",
+        "BodyPartImagePath": "assets/app-images/quads-lg.png",
+        "Description": "Often referred to as the king of excercises, this version of the squat doubles as a plyometric workout.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/0LGJZqKfpXs",
+        "WorkoutSetps": [
+            "Align your feet at shoulder width apart and plant your heels deep to the earth",
+            "Lower yourself down, pushing your butt out like you have to use a far away toilet",
+            "Once you are ass to grass, explode up wards and project yourself into the air",
+            "Land on the balls of your feet and lower your heels back to the earth",
+            "Repeat until failure"
+        ]
+    },
+    {
+        "Id": 10,
+        "Title": "Walking Lunge",
+        "BodyPartImagePath": "assets/app-images/quads-lg.png",
+        "Description": "One of my least favorite excercises, but one of the most necessary, the walking lunge will take you the distance.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/L8fvypPrzzs",
+        "WorkoutSetps": [
+            "Start at the end of a hallway or one end of a room",
+            "Take a sizeable step, planting your foot flat and lunging forward",
+            "Slowly hover or lightly touch your knee to the ground",
+            "Push yourself forward coming to an erect position",
+            "Repeat until you have traversed the hall/room twice"
+        ]
+    },
+    {
+        "Id": 11,
+        "Title": "Rear Lunge",
+        "BodyPartImagePath": "assets/app-images/quads-lg.png",
+        "Description": "The less aggresive version of the walking lunge, this allows you to stay in place.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/Ix9QZ3Pnneo",
+        "WorkoutSetps": [
+            "Start off standing up straight",
+            "Take a sizeable step backwards, planting your foot flat",
+            "Slowly hover or lightly touch your knee to the ground",
+            "Push yourself forward coming to an erect position",
+            "Repeat for boths legs"
+        ]
+    },
+    {
+        "Id": 12,
+        "Title": "Single Leg Calf Raise",
+        "BodyPartImagePath": "assets/app-images/calf-lg.png",
+        "Description": "No matter how many of these you do, you will still have baby calfs, lookin' like a young cow.",
+        "YouTubeVideoUrl": "https://youtube.com/embed/Tla2ScHQgu0",
+        "WorkoutSetps": [
+            "Stand infront of your bench facing away from it",
+            "Place one leg on the bench behind you",
+            "Raise your foot on the ground to your tippy toes",
+            "Hold and flex your calf for two seconds",
+            "Repeat until failure",
+            "Do for your other leg"
+        ]
+    },   
+    {
+        "Id": 13,
         "Title": "Leg-Raise",
         "BodyPartImagePath": "assets/app-images/abs-lg.png",
         "Description": "Beginning the final stretch of this workout we begin with a classic leg raise designed to make both your abs and lower back DY-NO-MITE!",
@@ -90,7 +194,7 @@
         ]
     },
     {
-        "Id": 7,
+        "Id": 14,
         "Title": "Floor-Crunch",
         "BodyPartImagePath": "assets/app-images/abs-lg.png",
         "Description": "Old as time itself, the floor crunch is as simple as it sounds. GET TO IT!",
@@ -105,7 +209,7 @@
         ]
     },
     {
-        "Id": 8,
+        "Id": 15,
         "Title": "Plank",
         "BodyPartImagePath": "assets/app-images/abs-lg.png",
         "Description": "Wrapping up this workout with the excercise that makes time stop.",
